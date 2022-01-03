@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: 'roboto';
+}
+
+/* Estilos para el header */
+
+header {
+	margin: 0px;
+	width: 100%;
+	position: fixed;
+	height: 100px;
+	top: 0;
+	background-color: white;
+	padding: 10px 10%;
+	z-index: 2000;
+	right: 0;
+}
+
+header img {
+	float: left;
+	width: 150px;
+}
+header nav {
+	padding: 5px 10px;
+	float: right;
+}
+
+header nav .menu ul li {
+	display: inline-block;
+}
+
+header nav .menu ul li a {
+	color: red;
+}
+
+/* Estilos para el header */
+
+main {
+	margin: 150px 0px 0px 0px;
+	border-top: 2px solid red;
+	border-bottom: 2px solid red;
+}
+
+/* Doy estilos a todos los h2 y h3 y si despues tengo qu emodificar alguno lo hago puntualmente */
+
+h2 {
+	margin: 25px;
+	color: darkgrey;
+	font-size: 32px;
+}
+
+h3 {
+	margin: 35px;
+	color: darkgray;
+	font-size: 26px;
+}
+
+.carreras {
+	margin-right: 33%;
+}
+.carreras img {
+	width: 180px;
+}
+
+/* hice esto para que tenga una h1, aun que la pagina no lo use */
+.carreras h1 {
+	display: none;
+}
+
+.contacto {
+	background-color: black;
+}
+.contacto h3 {
+	font-size: 24px;
+	color: lightslategray;
+	margin-left: 5px;
+}
+.contacto iframe {
+	margin: 2.5%;
+}
+
+.listaContacto ul {
+	width: 300px;
+	border: 1px dashed white;
+	color: white;
+	margin: 5px;
+}
+
+.listaContacto ul li {
+	padding: 10px;
+}
+
+/* Estilos para el footer */
+
+footer {
+	font-size: 36;
+	float: right;
+}

@@ -1,0 +1,23 @@
+/* arranque con esto y recorde qu eno va en la entrega, de todas maneras lo dejo */
+
+.contactForm {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.contactForm label {
+	margin: 2px;
+	width: 200px;
+}
+.contactForm input {
+	border: solid 1px black;
+	border-radius: 5%;
+	margin: 2px;
+	width: 200px;
+}
+.contactForm textarea {
+	border: solid 1px black;
+	border-radius: 5%;
+	margin: 2px;
+	width: 200px;
+}

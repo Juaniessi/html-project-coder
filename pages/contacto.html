@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/contactoStyle.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../img/favicon.jpg"><!-- favicon -->
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html"><img src="../img/logo_rayuela_chico.png" alt="Logo Rayuela"></a>
+    <nav>
+      <ul>
+        <a href="../index.html">
+          <li>Home</li>
+        </a>
+        <a href="./institucional.html">
+          <li>Institucional</li>
+        </a>
+        <a href="./carreras.html">
+          <li>Carreras</li>
+        </a>
+        <a href="./noticias.html">
+          <li>Noticias</li>
+        </a>
+        <a href="./contacto.html">
+          <li>Contacto</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Contacto</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.4863630530926!2d-68.8327801484614!3d-32.885306880845796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0923dea43517%3A0x105569535611a9e5!2sSan%20Luis%20545%2C%20M5500%20Mendoza!5e0!3m2!1ses-419!2sar!4v1638049597457!5m2!1ses-419!2sar"
+      width="1024" height="480" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+    <form class="contactForm" action="">
+      <label for="fname">Nombre</label>
+      <input type="text" id="fname" name="fname" required />
+      <label for="lname">Apellido</label>
+      <input type="text" id="lname" name="lname" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+      <label for="telephone">Teléfono</label>
+      <input type="number" id="telephone" name="telephone" required />
+      <label for="aboutMsg">Asunto</label>
+      <input type="text" id="aboutMsg" name="aboutMsg" size="75" />
+      <label for="contactMsg">Mensaje</label>
+      <textarea id="contactMsg" name="contactMsg" cols="75" rows="10"
+        placeholder="¡Dejanos tu comentario tu en breve nos pondremos en contacto!" required></textarea>
+      <input type="submit" value="Enviar" />
+    </form>
+
+  </main>
+  <footer>
+    <div class="share">
+      <a href="https://www.facebook.com/FundacionRayuelaMendoza" target="_blank">Facebook</a>
+      <a href="https://twitter.com/RayuelaMza" target="_blank">Twitter</a>
+      <a href="http://www.linkedin.com/company/instituto-rayuela" target="_blank">Instagram</a>
+  </footer>
+</body>
+
+</html>
