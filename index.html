@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/styleMobile.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
 			rel="stylesheet"
@@ -21,6 +22,11 @@
 			</a>
 			<nav>
 				<div class="menu">
+					<!-- para menu hamburguesa -->
+					<input type="checkbox" id="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
 					<ul>
 						<li><a href="./index.html">Home</a></li>
 						<li><a href="./pages/institucional.html">Institucional</a></li>
@@ -35,14 +41,39 @@
 			<section class="carreras" id="carreras">
 				<h1>Fundación Rayuela</h1>
 				<h2>Carreras</h2>
-				<img src="./img/PEP-1.jpg" alt="Educación Primaria" />
-				<img src="./img/PEE-1.jpg" alt="Educación Especial" />
-				<img src="./img/PEI-1.jpg" alt="Educación Inicial" />
-				<img src="./img/PRE-1.jpg" alt="Preseptoría" />
-				<img
+				<div>
+					<img src="./img/PEP-1.jpg" alt="Educación Primaria" />
+					<p>
+						Profesorado de educación Primaria
+					</p>
+				</div>
+				<div>
+					<img src="./img/PEE-1.jpg" alt="Educación Especial" />
+					<p>
+						Profesorado de Educación Inicial
+					</p>
+				</div>
+				<div>
+					<img src="./img/PEI-1.jpg" alt="Educación Inicial" />
+					<p>
+						Profesorado de educación Inicial
+					</p>
+				</div>
+				<div>
+					<img src="./img/PRE-1.jpg" alt="Preceptoría" />
+					<p>
+						Preceptor Escolar
+					</p>
+				</div>
+				<div>
+					<img
 					src="./img/BIB-1.jpg"
 					alt="Comunicación y Gestión de Bibliotecas"
 				/>
+					<p>
+						Tecnicatura en comunicacón y gestión de bibliotecas
+					</p>
+				</div>
 			</section>
 			<section class="noticias" id="noticias">
 				<h2>Noticias</h2>
@@ -52,14 +83,15 @@
 					<a href=""><img src="" alt="Noticia destacada 3" /></a>
 				</div>
 			</section>
-			<section class="accesos" id="accesos">
+			<section class="acceso-reg-acad" id="acceso-reg-acad">
 				<h2>Acceso al Sistema de Registro Academico</h2>
 				<img src="./img/" alt="aceeso-sist-academ" />
-				<hr />
-				<h2>Acceso al Campus vistual</h2>
-				<img src="./img/" alt="aceeso-campus-virtual" />
-				<hr />
-				<article>
+			</section>	
+				<section class="acceso-campus">
+					<h2>Acceso al Campus virtual</h2>
+					<img src="./img/" alt="aceeso-campus-virtual" />
+				</section>	
+				<article class="boletin">
 					<h2>Suscribirse al boletín de novedades</h2>
 					<img src="./img/" alt="Boletin de noticias" />
 					<form action="">

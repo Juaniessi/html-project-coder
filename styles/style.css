@@ -16,36 +16,60 @@ header {
 	margin: 0px;
 	width: 100%;
 	position: fixed;
-	height: 100px;
 	top: 0;
 	background-color: white;
-	padding: 10px 10%;
+	padding: 15px;
 	z-index: 2000;
 	right: 0;
+	border-bottom: solid 1px red;
+	box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+	display: flex;
+	align-items: center;
+	justify-content: space-between; /*mando el logo a la izqueirda y el nav a la derecha*/
 }
 
 header img {
-	float: left;
 	width: 150px;
 }
-header nav {
-	padding: 5px 10px;
-	float: right;
+
+header .menu input {
+	/*oculto el check box */
+	display: none;
 }
 
 header nav .menu ul li {
 	display: inline-block;
+	width: 130px;
+	text-align: center;
+	padding: 3px;
 }
 
 header nav .menu ul li a {
-	color: red;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1.2rem;
 }
 
-/* Estilos para el header */
+/* Estilos hover para header */
+
+header nav .menu ul li a:hover {
+	color: red;
+	border-bottom: 1.5px solid red;
+}
+
+/* Estilos para el main */
 
 main {
-	margin: 150px 0px 0px 0px;
-	border-top: 2px solid red;
+	display: grid;
+	grid-template: repeat(5, auto) / 70% 30%;
+	grid-template-areas:
+		'carreras acceso-red-acad'
+		'carreras acceso-campus'
+		'carreras boletin'
+		'noticias noticias'
+		'contacto contacto';
+	margin: 100px 0px 0px 0px;
 	border-bottom: 2px solid red;
 }
 
@@ -62,12 +86,36 @@ h3 {
 	color: darkgray;
 	font-size: 26px;
 }
+.noticias {
+	grid-area: noticias;
+}
 
 .carreras {
-	margin-right: 33%;
+	grid-area: carreras;
+	display: flex;
+	flex-flow: row wrap;
+	flex-shrink: none;
+	flex-grow: none;
+	color: red;
+	text-align: center;
+	justify-content: center;
+}
+
+.carreras div{
+	margin: 5px;
+}
+
+.carreras div p{
+	width: 280px;
+}
+
+.carreras h2{
+	width: 100%;
+	text-align: left;
 }
 .carreras img {
-	width: 180px;
+	width: 280px;
+	height: 180px;
 }
 
 /* hice esto para que tenga una h1, aun que la pagina no lo use */
@@ -76,6 +124,7 @@ h3 {
 }
 
 .contacto {
+	grid-area: contacto;
 	background-color: black;
 }
 .contacto h3 {
