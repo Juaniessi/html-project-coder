@@ -101,18 +101,17 @@ h3 {
 	justify-content: center;
 }
 
-.carreras div{
+.carreras div {
 	margin: 5px;
 }
 
-.carreras div p{
+.carreras div p {
 	width: 280px;
 }
 
-.carreras h2{
+.carreras h2 {
 	width: 100%;
 	text-align: left;
-
 }
 .carreras img {
 	width: 280px;
@@ -137,32 +136,29 @@ h3 {
 	margin: 2.5%;
 }
 
-
-
 .listaContacto ul li {
 	padding: 10px;
 }
 
-.acceso-reg-acad{
+.acceso-reg-acad {
 	display: flex;
 	flex-direction: column;
 }
 
-.acceso-reg-acad img{
+.acceso-reg-acad img {
 	margin: 0 auto;
 }
 
-.acceso-campus{
+.acceso-campus {
 	display: flex;
 	flex-direction: column;
 }
 
-.acceso-campus img{
+.acceso-campus img {
 	margin: 0 auto;
 }
 
-
-.boletin{
+.boletin {
 	display: flex;
 	flex-flow: column nowrap;
 	flex-shrink: none;
@@ -171,34 +167,34 @@ h3 {
 	align-items: center;
 }
 
-.boletin-form div{
+.boletin-form div {
 	width: 100%;
 	margin: 5px;
 }
 
-.boletin-form div input{
+.boletin-form div input {
 	border: 1px black solid;
 	float: right;
 	border-radius: 5px;
 }
-.boletin img{
+.boletin img {
 	margin: 0 auto;
 }
-.btn-buletin{
-width: 100%;
-margin: 0 auto;
-border-radius: 5px;
-padding: 5px;
+.btn-buletin {
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 5px;
 }
 
-.noticiasDestacadas{
+.noticiasDestacadas {
 	display: flex;
 	flex-flow: row nowrap;
 	gap: 1rem;
 	justify-content: space-evenly;
 }
 
-.contacto{
+.contacto {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
@@ -211,7 +207,7 @@ padding: 5px;
 	margin: 5px;
 }
 
-.listaContacto a{
+.listaContacto a {
 	border: 1px solid white;
 	background-color: white;
 	color: black;
@@ -228,7 +224,7 @@ footer {
 	margin: 1rem;
 }
 
-footer a{
+footer a {
 	border: 1px solid red;
 	background-color: white;
 	color: black;
@@ -239,31 +235,35 @@ footer a{
 
 /* modificación a las otras paginas*/
 
-main.main-other-pages{
+main.main-other-pages {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 }
 
-main.main-other-pages img{
+main.main-other-pages img {
 	display: block;
 	margin: 0 auto;
 }
 
-main.main-other-pages button{
+main.main-other-pages button {
 	display: block;
 	margin: 0 auto;
 }
 
-main.main-other-pages p{
+main.main-other-pages p {
 	display: block;
 	margin: 0 auto;
 	max-width: 50%;
 }
 
-main.main-other-pages button{
+main.main-other-pages button {
 	border: solid 1px black;
 	border-radius: 5px;
 	padding: 5px;
 	margin-top: 5px;
+}
+
+.iframeContacto {
+	width: 90%;
 }
