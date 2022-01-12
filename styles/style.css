@@ -169,7 +169,7 @@ h3 {
 
 .boletin-form div {
 	width: 100%;
-	margin: 5px;
+	margin: 15px 0 5px 5px;
 }
 
 .boletin-form div input {
@@ -266,4 +266,11 @@ main.main-other-pages button {
 
 .iframeContacto {
 	width: 90%;
+}
+
+/* animaciones */
+
+.imgAnimation:hover{
+	transform: scale(1.1, 1.1);
+	transition: transform 0.7s ease-in-out;
 }
