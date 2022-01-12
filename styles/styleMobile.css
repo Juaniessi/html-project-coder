@@ -1,4 +1,6 @@
 @media screen and (max-width: 900px) {
+	
+
 	header nav .menu ul {
 		/*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
 		width: 100%;
@@ -85,6 +87,16 @@
 
 	/* body */
 
+	main{
+		display: flex;
+		flex-direction: column;
+		flex-flow: row wrap;
+		text-align: center;
+		justify-content: center;
+	}
 	
+	.contacto{
+		width: 100%;
+	}
 
 }
