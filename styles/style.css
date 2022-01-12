@@ -260,3 +260,10 @@ main.main-other-pages p{
 	margin: 0 auto;
 	max-width: 50%;
 }
+
+main.main-other-pages button{
+	border: solid 1px black;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 5px;
+}
