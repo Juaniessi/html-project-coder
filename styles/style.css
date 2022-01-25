@@ -62,7 +62,7 @@ header nav .menu ul li a:hover {
 
 main {
 	display: grid;
-	grid-template: repeat(5, auto) / 75% 25%;
+	grid-template: repeat(5, auto) / 75% auto;
 	grid-template-areas:
 		'carreras acceso-red-acad'
 		'carreras acceso-campus'
@@ -77,7 +77,7 @@ main {
 h2 {
 	margin: 25px;
 	color: darkgrey;
-	font-size: 32px;
+	font-size: 2.5rem;
 }
 
 h3 {
@@ -99,6 +99,7 @@ h3 {
 	color: red;
 	text-align: center;
 	justify-content: center;
+	align-items: center;
 }
 
 .carreras div {
@@ -107,6 +108,7 @@ h3 {
 
 .carreras div p {
 	width: 280px;
+	height: 50px;
 }
 
 .carreras h2 {
@@ -169,7 +171,7 @@ h3 {
 
 .boletin-form div {
 	width: 100%;
-	margin: 5px;
+	margin: 12px;
 }
 
 .boletin-form div input {
@@ -180,6 +182,7 @@ h3 {
 .boletin img {
 	margin: 0 auto;
 }
+
 .btn-buletin {
 	width: 100%;
 	margin: 0 auto;
@@ -187,11 +190,10 @@ h3 {
 	padding: 5px;
 }
 
-.noticiasDestacadas {
-	display: flex;
-	flex-flow: row nowrap;
-	gap: 1rem;
-	justify-content: space-evenly;
+/* cosas para el carousel de noticias, se borro bastante codigo tambien del index para reemplazar por bootstrap*/
+
+#carouselExampleCaptions{
+	margin: 0 20% 15px 20%;
 }
 
 .contacto {
@@ -217,21 +219,33 @@ h3 {
 }
 
 /* Estilos para el footer */
+/* 
+estos quedan comentados, son los originales. */
 
-footer {
+/* footer {
+	display: flex;
 	font-size: 36;
-	float: right;
 	margin: 1rem;
+	justify-content: right;
+	align-items: center;
 }
 
-footer a {
+footer div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100px;
 	border: 1px solid red;
+	border-radius: 5px;
+	margin: 0.25rem;
+}
+
+footer a {	
 	background-color: white;
 	color: black;
 	text-decoration: none;
-	padding: 0.5rem;
-	border-radius: 10px;
-}
+} */
 
 /* modificación a las otras paginas*/
 
@@ -266,4 +280,11 @@ main.main-other-pages button {
 
 .iframeContacto {
 	width: 90%;
+}
+
+/* animaciones a imagenes de accesos*/
+
+.imgAnimation:hover{
+	transform: scale(1.1, 1.1);
+	transition: transform 0.7s ease-in-out;
 }

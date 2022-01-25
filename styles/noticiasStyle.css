@@ -1,0 +1,18 @@
+main.no-grid {
+	display: initial;
+	grid-template: initial;
+	grid-template-areas: initial;
+	margin: initial;
+}
+
+/*tuve que hacer esto para poder acomodar alguas cosas del maquetado con bootstrap*/
+
+h2.noti-h2{
+	margin: 100px 25px 25px 25px;
+}
+
+.row{
+	margin-left: 25%;
+}
+
+/*fin de los atificios*/
