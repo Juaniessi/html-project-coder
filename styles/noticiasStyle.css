@@ -7,11 +7,11 @@ main.no-grid {
 
 /*tuve que hacer esto para poder acomodar alguas cosas del maquetado con bootstrap*/
 
-h2.noti-h2{
+h2.noti-h2 {
 	margin: 100px 25px 25px 25px;
 }
 
-.row{
+.row {
 	margin-left: 25%;
 }
 

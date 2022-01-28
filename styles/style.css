@@ -1,227 +1,284 @@
+@charset "UTF-8";
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
-	font-size: 16px;
-	font-family: 'roboto';
+  font-size: 16px;
+  font-family: 'roboto';
 }
 
 /* Estilos para el header */
-
 header {
-	margin: 0px;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	background-color: white;
-	padding: 15px;
-	z-index: 2000;
-	right: 0;
-	border-bottom: solid 1px red;
-	box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
-	display: flex;
-	align-items: center;
-	justify-content: space-between; /*mando el logo a la izqueirda y el nav a la derecha*/
+  margin: 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  padding: 15px;
+  z-index: 2000;
+  right: 0;
+  border-bottom: solid 1px red;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*mando el logo a la izqueirda y el nav a la derecha*/
 }
 
 header img {
-	width: 150px;
+  width: 150px;
 }
 
 header .menu input {
-	/*oculto el check box */
-	display: none;
+  /*oculto el check box */
+  display: none;
 }
 
 header nav .menu ul li {
-	display: inline-block;
-	width: 130px;
-	text-align: center;
-	padding: 3px;
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  padding: 3px;
 }
 
 header nav .menu ul li a {
-	color: black;
-	text-decoration: none;
-	font-weight: 500;
-	font-size: 1.2rem;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
-/* Estilos hover para header */
-
-header nav .menu ul li a:hover {
-	color: red;
-	border-bottom: 1.5px solid red;
+header nav .menu ul li a :hover {
+  /* Estilos hover para header */
+  color: red;
+  border-bottom: 1.5px solid red;
 }
 
 /* Estilos para el main */
-
 main {
-	display: grid;
-	grid-template: repeat(5, auto) / 75% auto;
-	grid-template-areas:
-		'carreras acceso-red-acad'
-		'carreras acceso-campus'
-		'carreras boletin'
-		'noticias noticias'
-		'contacto contacto';
-	margin: 100px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto auto auto;
+  -ms-grid-columns: 75% auto;
+      grid-template: auto auto auto auto auto / 75% auto;
+      grid-template-areas: 'carreras acceso-red-acad' 'carreras acceso-campus' 'carreras boletin' 'noticias noticias' 'contacto contacto';
 }
 
 /* Doy estilos a todos los h2 y h3 y si despues tengo qu emodificar alguno lo hago puntualmente */
-
 h2 {
-	margin: 25px;
-	color: darkgrey;
-	font-size: 2.5rem;
+  margin: 25px;
+  color: darkgrey;
+  font-size: 2.5rem;
 }
 
 h3 {
-	margin: 35px;
-	color: darkgray;
-	font-size: 26px;
-	margin: 1rem auto;
+  margin: 35px;
+  color: darkgray;
+  font-size: 26px;
+  margin: 1rem auto;
 }
+
 .noticias {
-	grid-area: noticias;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: noticias;
+}
+
+.noticias #carouselExampleCaptions {
+  margin: 0 20% 15px 20%;
 }
 
 .carreras {
-	grid-area: carreras;
-	display: flex;
-	flex-flow: row wrap;
-	flex-shrink: none;
-	flex-grow: none;
-	color: red;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: carreras;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-negative: none;
+      flex-shrink: none;
+  -webkit-box-flex: none;
+      -ms-flex-positive: none;
+          flex-grow: none;
+  color: red;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .carreras div {
-	margin: 5px;
+  margin: 5px;
 }
 
 .carreras div p {
-	width: 280px;
-	height: 50px;
+  width: 280px;
+  height: 50px;
 }
 
 .carreras h2 {
-	width: 100%;
-	text-align: left;
+  width: 100%;
+  text-align: left;
 }
+
 .carreras img {
-	width: 280px;
-	height: 180px;
+  width: 280px;
+  height: 180px;
+}
+
+.carreras h1 {
+  display: none;
 }
 
 /* hice esto para que tenga una h1, aun que la pagina no lo use */
-.carreras h1 {
-	display: none;
-}
-
 .contacto {
-	grid-area: contacto;
-	background-color: black;
-}
-.contacto h3 {
-	font-size: 24px;
-	color: lightslategray;
-	margin-left: 5px;
-}
-.contacto iframe {
-	margin: 2.5%;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: contacto;
+  background-color: black;
 }
 
-.listaContacto ul li {
-	padding: 10px;
+.contacto h3 {
+  font-size: 24px;
+  color: lightslategray;
+  margin-left: 5px;
+}
+
+.contacto iframe {
+  margin: 2.5%;
+}
+
+.contacto .listaContacto ul li {
+  padding: 10px;
 }
 
 .acceso-reg-acad {
-	display: flex;
-	flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .acceso-reg-acad img {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .acceso-campus {
-	display: flex;
-	flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .acceso-campus img {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .boletin {
-	display: flex;
-	flex-flow: column nowrap;
-	flex-shrink: none;
-	flex-grow: none;
-	justify-content: center;
-	align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-negative: none;
+      flex-shrink: none;
+  -webkit-box-flex: none;
+      -ms-flex-positive: none;
+          flex-grow: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.boletin-form div {
-	width: 100%;
-	margin: 15px 0 5px 5px;
+.boletin .boletin-form div {
+  width: 100%;
+  margin: 15px 0 5px 5px;
 }
 
-.boletin-form div input {
-	border: 1px black solid;
-	float: right;
-	border-radius: 5px;
-}
-.boletin img {
-	margin: 0 auto;
+.boletin .boletin-form div input {
+  border: 1px black solid;
+  float: right;
+  border-radius: 5px;
 }
 
-.btn-buletin {
-	width: 100%;
-	margin: 0 auto;
-	border-radius: 5px;
-	padding: 5px;
+.boletin .boletin-form div .boletin img {
+  margin: 0 auto;
+}
+
+.boletin .btn-buletin {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 /* cosas para el carousel de noticias, se borro bastante codigo tambien del index para reemplazar por bootstrap*/
-
-#carouselExampleCaptions{
-	margin: 0 20% 15px 20%;
-}
-
 .contacto {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.listaContacto ul {
-	width: 300px;
-	list-style: none;
-	color: white;
-	margin: 5px;
+.contacto .listaContacto ul {
+  width: 300px;
+  list-style: none;
+  color: white;
+  margin: 5px;
 }
 
-.listaContacto a {
-	border: 1px solid white;
-	background-color: white;
-	color: black;
-	text-decoration: none;
-	padding: 0.5rem;
-	border-radius: 10px;
+.contacto .listaContacto ul a {
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 /* Estilos para el footer */
 /* 
 estos quedan comentados, son los originales. */
-
 /* footer {
 	display: flex;
 	font-size: 36;
@@ -246,45 +303,50 @@ footer a {
 	color: black;
 	text-decoration: none;
 } */
-
 /* modificación a las otras paginas*/
-
 main.main-other-pages {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main.main-other-pages img {
-	display: block;
-	margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 main.main-other-pages button {
-	display: block;
-	margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 main.main-other-pages p {
-	display: block;
-	margin: 0 auto;
-	max-width: 50%;
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
 }
 
 main.main-other-pages button {
-	border: solid 1px black;
-	border-radius: 5px;
-	padding: 5px;
-	margin-top: 5px;
-}
-
-.iframeContacto {
-	width: 90%;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
 }
 
 /* animaciones a imagenes de accesos*/
-
-.imgAnimation:hover{
-	transform: scale(1.1, 1.1);
-	transition: transform 0.7s ease-in-out;
+.imgAnimation:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
 }
+/*# sourceMappingURL=style.css.map */
