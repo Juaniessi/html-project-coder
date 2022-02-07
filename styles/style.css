@@ -22,7 +22,7 @@ header {
   padding: 15px;
   z-index: 2000;
   right: 0;
-  border-bottom: solid 1px red;
+  border-bottom: solid 1px #f0190f;
   -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
@@ -60,10 +60,10 @@ header nav .menu ul li a {
   font-size: 1.2rem;
 }
 
-header nav .menu ul li a :hover {
+header nav .menu ul li a:hover {
   /* Estilos hover para header */
-  color: red;
-  border-bottom: 1.5px solid red;
+  color: #f0190f;
+  border-bottom: 1.5px solid #f0190f;
 }
 
 /* Estilos para el main */
@@ -80,13 +80,13 @@ main {
 /* Doy estilos a todos los h2 y h3 y si despues tengo qu emodificar alguno lo hago puntualmente */
 h2 {
   margin: 25px;
-  color: darkgrey;
+  color: #acacac;
   font-size: 2rem;
 }
 
 h3 {
   margin: 35px;
-  color: darkgray;
+  color: #acacac;
   font-size: 26px;
   margin: 1rem auto;
 }
@@ -119,7 +119,7 @@ h3 {
   -webkit-box-flex: none;
       -ms-flex-positive: none;
           flex-grow: none;
-  color: red;
+  color: #f0190f;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -149,10 +149,10 @@ h3 {
 }
 
 .carreras h1 {
+  /* hice esto para que tenga una h1, aun que la pagina no lo use */
   display: none;
 }
 
-/* hice esto para que tenga una h1, aun que la pagina no lo use */
 .contacto {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -163,7 +163,7 @@ h3 {
 
 .contacto h3 {
   font-size: 24px;
-  color: lightslategray;
+  color: #acacac;
   margin-left: 5px;
 }
 
@@ -312,6 +312,9 @@ main.main-other-pages {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

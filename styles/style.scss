@@ -1,3 +1,6 @@
+@import 'mixins';
+@import 'variables';
+
 * {
 	margin: 0;
 	padding: 0;
@@ -21,7 +24,7 @@ header {
 	padding: 15px;
 	z-index: 2000;
 	right: 0;
-	border-bottom: solid 1px red;
+	border-bottom: solid 1px $rayuelaRed;
 	box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
 	display: flex;
 	align-items: center;
@@ -46,10 +49,10 @@ header {
 			text-decoration: none;
 			font-weight: 500;
 			font-size: 1.2rem;
-			:hover {
+			&:hover {
 				/* Estilos hover para header */
-				color: red;
-				border-bottom: 1.5px solid red;
+				color: map-get($special-colors, 'rayuelaRed');
+				border-bottom: 1.5px solid $rayuelaRed;
 			}
 		}
 	}
@@ -73,13 +76,13 @@ main {
 
 h2 {
 	margin: 25px;
-	color: darkgrey;
+	color: $rayuelaGrey;
 	font-size: 2rem;
 }
 
 h3 {
 	margin: 35px;
-	color: darkgray;
+	color: $rayuelaGrey;
 	font-size: 26px;
 	margin: 1rem auto;
 }
@@ -96,7 +99,7 @@ h3 {
 	flex-flow: row wrap;
 	flex-shrink: none;
 	flex-grow: none;
-	color: red;
+	color: $rayuelaRed;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -117,18 +120,17 @@ h3 {
 		height: 180px;
 	}
 	h1 {
+		/* hice esto para que tenga una h1, aun que la pagina no lo use */
 		display: none;
 	}
 }
-
-/* hice esto para que tenga una h1, aun que la pagina no lo use */
 
 .contacto {
 	grid-area: contacto;
 	background-color: black;
 	h3 {
 		font-size: 24px;
-		color: lightslategray;
+		color: $rayuelaGrey;
 		margin-left: 5px;
 	}
 	iframe {
@@ -236,9 +238,7 @@ footer a {
 /* modificación a las otras paginas*/
 
 main.main-other-pages {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
+	@include behave-vertical;
 	img {
 		display: block;
 		margin: 0 auto;
