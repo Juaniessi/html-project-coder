@@ -77,11 +77,20 @@ main {
       grid-template-areas: 'carreras acceso-red-acad' 'carreras acceso-campus' 'carreras boletin' 'noticias noticias' 'contacto contacto';
 }
 
-/* Doy estilos a todos los h2 y h3 y si despues tengo qu emodificar alguno lo hago puntualmente */
-h2 {
+/* Doy estilos a todos los h2 y h3 y si despues tengo que modificar alguno lo hago puntualmente */
+.h2-big-col {
   margin: 25px;
   color: #acacac;
   font-size: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+.h2-small-col {
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 10px;
+  color: #acacac;
 }
 
 h3 {
@@ -136,11 +145,6 @@ h3 {
 .carreras div p {
   width: 280px;
   height: 50px;
-}
-
-.carreras h2 {
-  width: 100%;
-  text-align: left;
 }
 
 .carreras img {
