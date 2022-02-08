@@ -74,7 +74,7 @@ main {
 
 /* Doy estilos a todos los h2 y h3 y si despues tengo que modificar alguno lo hago puntualmente */
 
-.h2-big-col{
+.h2-big-col {
 	margin: 25px;
 	color: $rayuelaGrey;
 	font-size: 2rem;
@@ -83,7 +83,7 @@ main {
 }
 
 .h2-small-col {
-	font-size: 1.5vw;
+	font-size: 1.8vw;
 	text-align: center;
 	margin: 10px;
 	color: $rayuelaGrey;
@@ -95,6 +95,7 @@ h3 {
 	font-size: 26px;
 	margin: 1rem auto;
 }
+
 .noticias {
 	grid-area: noticias;
 	#carouselExampleCaptions {
@@ -116,18 +117,24 @@ h3 {
 	div {
 		margin: 5px;
 	}
+
 	div p {
 		width: 280px;
 		height: 50px;
 	}
-	
+
 	img {
 		width: 280px;
 		height: 180px;
 	}
+
 	h1 {
 		/* hice esto para que tenga una h1, aun que la pagina no lo use */
-		display: none;
+		width: 0;
+		height: 0;
+		color: white;
+		z-index: -1;
+		position: absolute;
 	}
 }
 
@@ -212,34 +219,7 @@ h3 {
 	}
 }
 
-/* Estilos para el footer */
-/* 
-estos quedan comentados, son los originales. */
-
-/* footer {
-	display: flex;
-	font-size: 36;
-	margin: 1rem;
-	justify-content: right;
-	align-items: center;
-}
-
-footer div{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	width: 100px;
-	border: 1px solid red;
-	border-radius: 5px;
-	margin: 0.25rem;
-}
-
-footer a {	
-	background-color: white;
-	color: black;
-	text-decoration: none;
-} */
+/* Estilos para el footer se dieron completamente con bootstrap */
 
 /* modificación a las otras paginas*/
 

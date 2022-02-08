@@ -87,7 +87,7 @@ main {
 }
 
 .h2-small-col {
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   text-align: center;
   margin: 10px;
   color: #acacac;
@@ -154,7 +154,11 @@ h3 {
 
 .carreras h1 {
   /* hice esto para que tenga una h1, aun que la pagina no lo use */
-  display: none;
+  width: 0;
+  height: 0;
+  color: white;
+  z-index: -1;
+  position: absolute;
 }
 
 .contacto {
@@ -280,33 +284,7 @@ h3 {
   border-radius: 10px;
 }
 
-/* Estilos para el footer */
-/* 
-estos quedan comentados, son los originales. */
-/* footer {
-	display: flex;
-	font-size: 36;
-	margin: 1rem;
-	justify-content: right;
-	align-items: center;
-}
-
-footer div{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	width: 100px;
-	border: 1px solid red;
-	border-radius: 5px;
-	margin: 0.25rem;
-}
-
-footer a {	
-	background-color: white;
-	color: black;
-	text-decoration: none;
-} */
+/* Estilos para el footer se dieron completamente con bootstrap */
 /* modificación a las otras paginas*/
 main.main-other-pages {
   display: -webkit-box;
