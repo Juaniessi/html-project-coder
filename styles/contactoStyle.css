@@ -3,24 +3,28 @@
 .contactForm {
 	display: flex;
 	flex-flow: column wrap;
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 33%;
 }
-
 .contactForm label {
 	margin: 2px;
-	width: 200px;
+	width: 90%;
+	align-self: center;
 }
 .contactForm input {
 	border: solid 1px black;
 	border-radius: 5px;
 	padding: 5px;
 	margin: 2px;
-	width: 200px;
+	width: 90%;
+	align-self: center;
 }
 .contactForm textarea {
 	border: solid 1px black;
 	border-radius: 5px;
 	margin: 2px;
-	width: 200px;
+	width: 90%;
+	align-self: center;
 }
 
 .iframeContacto {

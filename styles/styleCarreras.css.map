@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,CAAA;EACF,KAAK,EAAE,GAAG;CACV;;AAED,AAAA,EAAE,CAAA;EACD,UAAU,EAAE,MAAM;CAClB",
+    "sources": [
+        "styleCarreras.scss"
+    ],
+    "names": [],
+    "file": "styleCarreras.css"
+}

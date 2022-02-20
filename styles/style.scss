@@ -103,6 +103,14 @@ h3 {
 	}
 }
 
+.carousel-item h5 {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item p {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 .carreras {
 	grid-area: carreras;
 	display: flex;
@@ -135,6 +143,10 @@ h3 {
 		color: white;
 		z-index: -1;
 		position: absolute;
+	}
+	a {
+		text-decoration: none;
+		color: $rayuelaRed;
 	}
 }
 
@@ -177,9 +189,11 @@ h3 {
 	flex-grow: none;
 	justify-content: center;
 	align-items: center;
+	background-color: rgba(0, 0, 0, 0.05);
 	.boletin-form div {
 		width: 100%;
 		margin: 15px 0 5px 5px;
+
 		input {
 			border: 1px black solid;
 			float: right;
@@ -194,6 +208,7 @@ h3 {
 		margin: 0 auto;
 		border-radius: 5px;
 		padding: 5px;
+		background-color: rgba(0, 0, 0, 0.25);
 	}
 }
 
@@ -248,7 +263,11 @@ main.main-other-pages {
 
 /* animaciones a imagenes de accesos*/
 
-.imgAnimation:hover {
-	transform: scale(1.1, 1.1);
-	transition: transform 0.7s ease-in-out;
+.imgAnimation {
+	max-width: 200px;
+	max-height: 200px;
+	&:hover {
+		transform: scale(1.1, 1.1);
+		transition: transform 0.7s ease-in-out;
+	}
 }

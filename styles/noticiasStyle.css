@@ -5,7 +5,7 @@ main.no-grid {
 	margin: initial;
 }
 
-/*tuve que hacer esto para poder acomodar alguas cosas del maquetado con bootstrap*/
+/*tuve que hacer esto para poder acomodar alguas cosas del maquetado con bootstrap, en el HTML "noticias"*/
 
 h2.noti-h2 {
 	margin: 100px 25px 25px 25px;
